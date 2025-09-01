@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Emily\'s+Candy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Emily's Candy, sans-serif;
+}
+
+html{
+    user-select: none;
+}
+
+:root{
+    --main-color: #161616ce;
+    --second-color: #dedfe1;
+    --bg-color: #252526;
+    --text-color: #636363;
+    --border-color: #2b2c2e;
+    --hover-color: #4b4d4f;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+body{
+    background: #121416;
+    background-image: url("HoxgenGrid.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 1.6;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px 25px;
+    background: var(--main-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 24px var(--shadow-color);
+    border: 1px solid var(--second-color);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--text-color);
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 1em;
+    transition: border-color 0.2s;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: var(--hover-color);
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+    font-family: inherit;
+}
+
+form input[type="submit"] {
+    background: var(--hover-color);
+    color: #fff;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-weight: bold;
+    box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+form input[type="submit"]:hover {
+    background: var(--border-color);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: var(--text-color);
+    font-size: 0.9em;
+}
+
+.footer-Version {
+    margin-top: 5px;
+    font-style: italic;
+}

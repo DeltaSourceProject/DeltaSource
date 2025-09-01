@@ -1,0 +1,263 @@
+<!DOCTYPE html // W3C//DTD XHTML 1.0 Strict//EN  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="DeltaSource Project - Best Hackers Global">
+    <meta name="keywords" content="DeltaSource, Hacking, Cybersecurity, Ethical Hacking, Hackers, Security Tools">
+    <meta name="author" content="DeltaSource Team">
+    <link rel="stylesheet" href="Templates/Theme/temp.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Templates/Assets/icon/Delta.ico" type="image/x-icon">
+    <title>DeltaSource Project</title>
+    <!--JQ-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--firebase-->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-storage.js"></script>
+    <!--cloudflare-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha256.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/pad-zeropadding.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-utf8.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/aes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/tripledes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/pad-pkcs7.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-utf8-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5-min.js"></script>
+    <!--Github Cookies-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+    <script src="Templates/App/WebCookiesDelete.js"></script>
+    <script src="Templates/App/WebIPTracker.js"></script>
+    <script src="Templates/App/WebRTC.js"></script>
+</head>
+<body>
+    <div class="container">
+        <span class="title"><img src="Templates/Assets/Image/Delta.png"> DeltaSourceProject</span>
+        <span class="Subtitle">Best Hackers Global</span>
+           <nav class="nav">
+             <ul class="nav-list">
+                    <li class="nav-item"><a href="DeltaSource.html">Home <i class="ri-planet-line"></i></a></li>
+                    <li class="nav-item"><a href="">Project <i class="ri-shake-hands-line"></i></a></li>
+                    <li class="nav-item"><a href="Contact.html">Contact <i class="ri-user-community-line"></i></a></li>
+                </ul>
+           </nav>
+    </div>
+    <main class="main">
+        <section class="section">
+            <h1>Welcome to DeltaSource Project</h1>
+            <p>Your gateway to the best hacking resources and community.</p>
+            <img src="Templates/Assets/Image/AnonymousDeltaSource.png" alt="Hacker Image" class="main-image">
+            <p class="description">
+                At DeltaSource Project, we are dedicated to providing top-notch hacking tools, tutorials, and a vibrant community for enthusiasts and professionals alike. Join us to explore the world of ethical hacking and cybersecurity.
+            </p>
+            <button class="btn-github" onclick="window.location.href=''">Visit our GitHub <i class="ri-github-line"></i></button>
+            <button class="btn-discord" onclick="window.location.href=''">Join our Discord <i class="ri-discord-line"></i></button>
+        </section>
+    </main>
+    <main  class="section-card">
+        <section class="card">
+            <h2>Our Services</h2>
+            <div class="card-container">
+                <div class="card-item">
+                    <h3>Hacking Tools</h3>
+                    <p>Explore a wide range of ethical hacking tools curated by experts.</p>
+                </div>
+                <div class="card-item">
+                    <h3>Tutorials</h3>
+                    <p>Learn from comprehensive tutorials designed for all skill levels.</p>
+                </div>
+                <div class="card-item">
+                    <h3>Community</h3>
+                    <p>Join our community of hackers and cybersecurity enthusiasts.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <main class="section-plans">
+        <section class="plans">
+            <h2>Membership Plans</h2>
+            <div class="plans-container">
+                <div class="plan-item">
+                    <h3>Free Plan</h3>
+                    <p>Access to basic tools and community forums.</p>
+                    <p class="price">$0/month</p>
+                    <button class="btn-select">Select Plan</button>
+                </div>
+                <div class="plan-item">
+                    <h3>Pro Plan</h3>
+                    <p>Unlock advanced tools, tutorials, and priority support.</p>
+                    <p class="price">$9.99/month</p>
+                    <button class="btn-select">Select Plan</button>
+                </div>
+                <div class="plan-item">
+                    <h3>Enterprise Plan</h3>
+                    <p>Comprehensive solutions for businesses and organizations.</p>
+                    <p class="price">Contact us for pricing</p>
+                    <button class="btn-select">Select Plan</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 DeltaSource Project. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="ri-github-line"></i></a>
+            <a href="#" class="social-icon"><i class="ri-discord-line"></i></a>
+            <a href="#" class="social-icon"><i class="ri-twitter-line"></i></a>
+        </div>
+    </footer>
+  <script type="text/javascript">
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyD-EXAMPLE-KEY",
+            authDomain: "deltasourceproject.firebaseapp.com",
+            projectId: "deltasourceproject",
+            storageBucket: "deltasourceproject.appspot.com",
+            messagingSenderId: "1234567890",
+            appId: "1:1234567890:web:abcdef123456"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const database = firebase.database();
+        const firestore = firebase.firestore();
+        const storage = firebase.storage();
+        // Example: Sign in anonymously
+        auth.signInAnonymously()
+            .then(() => {
+                console.log("Signed in anonymously");
+            })
+            .catch((error) => {
+                console.error("Error signing in anonymously:", error);
+            });
+        // Example: Show a welcome alert using SweetAlert2
+        Swal.fire({
+            title: 'Welcome to DeltaSource Project!',
+            text: 'Anti-Bot Verification, Click button.',
+            icon: 'info',
+            confirmButtonText: 'Click Me'
+        });
+        // Example: Set a cookie using js-cookie
+        Cookies.set('visited', 'true', { expires: 7 });
+        console.log("Cookie 'visited' set to true for 7 days");
+        // Example: Encrypt a message using CryptoJS
+        var message = "Hello, DeltaSource!";
+        var secretKey = "mySecretKey";
+        var encrypted = CryptoJS.AES.encrypt(message, secretKey).toString();
+        console.log("Encrypted message:", encrypted);
+        var decrypted = CryptoJS.AES.decrypt(encrypted, secretKey).toString(CryptoJS.enc.Utf8);
+        console.log("Decrypted message:", decrypted);
+    </script>
+    <!--Anti-bot-->
+      <script type="text/javascript">
+        // Anti-bot verification logic can be added here
+        // For example, you can implement a simple CAPTCHA or other verification methods
+        console.log("Anti-bot verification script loaded");
+
+        function verifyUser() {
+            // Placeholder function for user verification
+            console.log("User verified");
+        }
+        // Call verifyUser function after user interaction
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.btn-github').addEventListener('click', verifyUser);
+            document.querySelector('.btn-discord').addEventListener('click', verifyUser);
+        });
+
+        caches.keys().then(function(names) {
+            for (let name of names)
+                caches.delete(name);
+        });
+        window.addEventListener("beforeunload", function() {
+            // Clear local storage and session storage
+            localStorage.clear();
+            sessionStorage.clear();
+            console.log("Local and session storage cleared");
+        });
+        // Fixed bug: Properly capitalize the secretKey
+        secretKey = secretKey.charAt(0).toUpperCase() + secretKey.slice(1);
+        console.log("Secret key formatted:", secretKey);
+        console.log("Page loaded and scripts executed");
+      </script>
+      <!--Anti DDOS/DOS-->
+      <script type="text/javascript">
+        // Anti DDOS/DOS logic can be added here
+        // For example, you can implement rate limiting or request validation
+        console.log("Anti DDOS/DOS script loaded");
+
+        let requestCount = 0;
+        const maxRequests = 100; // Maximum requests allowed
+        const timeWindow = 60000; // Time window in milliseconds (e.g., 1 minute)
+
+        function trackRequests() {
+            requestCount++;
+            if (requestCount > maxRequests) {
+                console.warn("Too many requests! Potential DDOS attack detected.");
+                // Implement further actions like blocking the user or showing a warning
+            }
+        }
+
+        setInterval(() => {
+            requestCount = 0; // Reset request count after the time window
+        }, timeWindow);
+
+        // Example: Track requests on button clicks
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.btn-github').addEventListener('click', trackRequests);
+            document.querySelector('.btn-discord').addEventListener('click', trackRequests);
+        });
+    </script>
+    <!--Blocked Script XSS , Tracker Script  ,  Tracker IP and Mac , Tracker  WebRTC-->
+    <script type="text/javascript">
+        // XSS protection logic can be added here
+        // For example, you can sanitize user inputs or block suspicious scripts
+        console.log("XSS protection script loaded");
+
+        function sanitizeInput(input) {
+            const element = document.createElement('div');
+            element.innerText = input;
+            return element.innerHTML;
+        }
+
+        // Example: Sanitize user input on form submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const forms = document.querySelectorAll('form');
+            forms.forEach(form => {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    const inputs = form.querySelectorAll('input, textarea');
+                    inputs.forEach(input => {
+                        input.value = sanitizeInput(input.value);
+                    });
+                    form.submit();
+                });
+            });
+        });
+
+        // Block tracking scripts and WebRTC leaks
+        Object.defineProperty(navigator, 'plugins', {
+            get: function() { return []; }
+        });
+        Object.defineProperty(navigator, 'mimeTypes', {
+            get: function() { return []; }
+        });
+        if (window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection) {
+            console.warn("WebRTC is supported, consider disabling it for privacy.");
+            // Further actions to disable WebRTC can be implemented here
+        }
+    </script>
+</body>
+</html>

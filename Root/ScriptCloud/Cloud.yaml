@@ -1,0 +1,47 @@
+# Przykładowy skrypt YAML do konfiguracji prostego środowiska chmurowego
+
+cloud:
+  project: DeltaSource
+  region: europe-west1
+  resources:
+    - type: vm
+      name: main-server
+      image: ubuntu-22.04
+      cpu: 2
+      ram: 4GB
+      disk: 50GB
+      network: public
+    - type: storage
+      name: data-bucket
+      size: 100GB
+      access: private
+    - type: database
+      name: user-db
+      engine: postgresql
+      version: "15"
+      cpu: 1
+      ram: 2GB
+      disk: 20GB
+      network: private
+
+security:
+  firewall:
+    - allow: ssh
+      from: 0.0.0.0/0
+    - allow: http
+      from: 0.0.0.0/0
+    - deny: all
+      from: "*"
+
+monitoring:
+  enabled: true
+  alerts:
+    - type: cpu
+      threshold: 80%
+    - type: memory
+      threshold: 75%
+    - type: disk
+      threshold: 90%
+  notifications:
+    - email:
+    

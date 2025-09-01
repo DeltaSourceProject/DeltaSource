@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeltaSourceProject/Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="Templates/Assets/icon/Delta.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Templates/Theme/Temps.css">
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>    
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="/submit_contact" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+        <span class="footer">© 2024 DeltaSourceProject</span>
+        <span class="footer-Version">Version 5.6.3b</span>
+    </div>
+    <script>
+        // Custom JavaScript can be added here
+        console.log("Contact page loaded.");
+
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !message) {
+                alert("All fields are required!");
+                return false;
+            }
+            return true;
+        }
+
+        document.querySelector('form').onsubmit = validateForm;
+        document.querySelector('form').addEventListener('submit', function(event) {
+            if (!validateForm()) {
+                event.preventDefault();
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("DOM fully loaded and parsed");
+        });
+
+        setTimeout(function() {
+            console.log("This message is displayed after 2 seconds");
+        }, 2000);
+
+        window.addEventListener('resize', function() {
+            console.log("Window resized to: " + window.innerWidth + "x" + window.innerHeight);
+        });
+
+        window.addEventListener('scroll', function() {
+            console.log("Page scrolled to: " + window.scrollY);
+        });
+
+        document.addEventListener('click', function(event) {
+            console.log("Clicked element: " + event.target.tagName);
+        });
+
+        document.addEventListener('mouseover', function(event) {
+            console.log("Mouse over element: " + event.target.tagName);
+        });
+
+        document.addEventListener('mouseout', function(event) {
+            console.log("Mouse out from element: " + event.target.tagName);
+        });
+
+        document.addEventListener('keydown', function(event) {
+            console.log("Key pressed: " + event.key);
+        });
+
+        document.addEventListener('keyup', function(event) {
+            console.log("Key released: " + event.key);
+        });
+
+        document.addEventListener('focus', function(event) {
+            console.log("Focused element: " + event.target.tagName);
+        }, true);
+
+        document.addEventListener('blur', function(event) {
+            console.log("Blurred element: " + event.target.tagName);
+        }, true);
+
+        addEventListener('beforeunload', function(event) {
+            event.returnValue = "Are you sure you want to leave?";
+        });
+
+        matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(event) {
+            console.log("Color scheme changed to: " + (event.matches ? "dark" : "light"));
+        });
+
+        MIDIConnectionEvent.scrollY.addEventListener('change', function(event) {
+            console.log("Scroll position changed to: " + window.scrollY);
+        });
+
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+            console.log("Right-click context menu opened on: " + event.target.tagName);
+        });
+
+        document.addEventListener('dblclick', function(event) {
+            console.log("Double clicked on: " + event.target.tagName);
+        });
+
+        tagName = document.querySelector('form').tagName;
+        console.log("Form tag name is: " + tagName);
+        className = document.querySelector('form').className;
+        console.log("Form class name is: " + className);
+        idName = document.querySelector('form').id;
+        console.log("Form ID is: " + idName);
+        innerHTML = document.querySelector('form').innerHTML;
+        console.log("Form inner HTML: " + innerHTML);
+        outerHTML = document.querySelector('form').outerHTML;
+        console.log("Form outer HTML: " + outerHTML);
+    </script>
+</body>
+</html>
